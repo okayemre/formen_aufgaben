@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buchungsformular für ein Hotel</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="booking-form">
+        <h1>BUCHUNGSFORMULAR</h1>
+
+        <form id="bookingForm" action="booking.js" method="post">
+            <label for="name"> Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <br>
+
+            <label for="email">E-Mail: </label>
+            <input type="email" id="email" name="email" required>
+
+            <br>
+
+            <label for="phoneNummber">Tel-Nummber: </label>
+            <input type="tel" id="phoneNummber" name="phoneNumber">
+
+            <label for="checkInDate">Check-in-Datum:</label>
+            <input type="date" id="checkInDate" name="checkInDate" required>
+
+            <label for="checkOutDate">Check-out-Datum:</label>
+            <input type="date" id="checkOutDate" name="checkOutDate" required>
+
+            <p>Zimmertyp:</p>
+            <div class="radio-buttons">
+                <input type="radio" id="singleRoom" name="roomType" value="single">
+                <label for="singleRoom">Einzelzimmer</label>
+
+                <input type="radio" id="doubleRoom" name="roomType" value="double">
+                <label for="doubleRoom">Doppelzimmer</label>
+
+                <input type="radio" id="suite" name="roomType" value="suite">
+                <label for="suite">Suite</label>
+            </div>
+            <input type="submit" value="Jetzt buchen">
+
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anmeldeformular</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <form id="registrationForm" action="course.registration.js" method="post">
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">E-Mail:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="courseSelection">Kurse:</label>
+        <select id="courseSelection" name="courseSelection" required>
+            <option value="yoga">Yoga</option>
+            <option value="pilates">Pilates</option>
+            <option value="crossfit">Crossfit</option>
+        </select>
+
+        <p>Bevorzugte Trainingszeit:</p>
+        <div class="radio-group">
+            <input type="radio" id="morning" name="trainingTime" value="morning">
+            <label for="morning">Morgens</label>
+
+            <input type="radio" id="noon" name="trainingTime" value="noon">
+            <label for="noon">Mittags</label>
+
+            <input type="radio" id="evening" name="trainingTime" value="evening">
+            <label for="evening">Abends</label>
+        </div>
+
+        <div class="checkbox-group">
+            <input type="checkbox" id="specialNeeds" name="specialNeeds">
+            <label for="specialNeeds">Besondere Bedürfnisse angeben (z.B. Allergien oder körperliche Einschränkungen)
+            </label>
+        </div>
+
+        <input type="submit" value="Anmelden">
+
+    </form>
+
+
+</body>
+
+</html>
